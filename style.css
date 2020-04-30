@@ -1381,7 +1381,7 @@ a.woocommerce-LoopProduct-link.woocommerce-loop-product__link p {
     padding: 2px 12px 2px 20px;
 }
 
-.woocommerce a.added_to_cart.wc-forward{
+.woocommerce a.added_to_cart.wc-forward {
     display: none;
 }
 
@@ -1396,7 +1396,7 @@ span.woocommerce-Price-currencySymbol {
     margin: 0 auto;
     border-radius: 40px;
     border: 1px solid;
-	padding: 10px 0px 10px 40px;
+	padding: 10px;
 }
 
 
@@ -1430,6 +1430,10 @@ span.wpcf7-not-valid-tip {
 
 #newsletter-section .wpcf7-submit:hover {
     text-decoration: underline;
+}
+.wpcf7-form-control-wrap {
+    position: relative;
+    margin-left: 10px;
 }
 
 /*--------------------------------------------------------------
