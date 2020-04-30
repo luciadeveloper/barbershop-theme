@@ -47,12 +47,10 @@ jQuery('.owl-carousel').owlCarousel({
 })
 
 function addDotButtonText() {
-
+    console.log('buttons accessible')
     // loop through each dot element
     jQuery('.owl-dot').each(function() {
-        // remove old text nodes
-        jQuery(this).find('.offscreen').remove();
-
+    
         // grab its (zero-based) order in the series
         let idx = $(this).index() + 1;
 

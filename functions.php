@@ -116,17 +116,6 @@ function barbershop_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
-	/*register_sidebar( array(
-		'name'          => esc_html__( 'Footer  column1', 'barbershop' ),
-		'id'            => 'footer-column-1',
-		'description'   => esc_html__( 'Add widgets here.', 'barbershop' ),
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-	*/
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer  column2', 'barbershop' ),
 		'id'            => 'footer-column-2',
@@ -244,14 +233,7 @@ function create_post_type_barber() {
 			'supports' => array(
 				'title',
 				'editor',
-				//'excerpt',
 				'thumbnail',
-				//'author',
-				//'trackbacks',
-				//'custom-fields',
-				//'revisions',
-				//'page-attributes', 
-				//'post-formats',
 			),
 			)
 		);
@@ -297,14 +279,3 @@ add_theme_support( 'woocommerce', array(
 	'thumbnail_image_height' => 160,
 ) );
 
-/*
-function wp_get_attachment_metadata_mine($data) {
- 
-      $res = $data;
-      if (!isset($data['width']) || !isset($data['height'])) {
-          $res = false;
-      }  
-      return $res;                                                                                                                                                            
-  }
-  
-  */
